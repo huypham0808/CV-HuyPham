@@ -3,6 +3,7 @@
     font-size: 16px;
 }
 
+
 .myHeader {
     position: fixed;
     top: 0;
@@ -28,6 +29,28 @@
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
+.myHeader::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255, .4), transparent);
+    transition: .5s;
+}
+.myHeader:hover::after {
+    left: 100%;
+}
+.myHeader a {
+    color: #D2691E;
+    text-decoration: none;
+    font-family: 'Merienda', cursive;
+    transition: all 0.3s;
+}
+.myHeader a:hover {
+    color: #BC243C;
+}
 .logo {
     font-size: 2rem;
     color: #fff;
@@ -36,13 +59,33 @@
 }
 
 .myNavbar a {
+    position: relative;
     font-size: 1.15rem;
-    color: #fff;
+    color: #E15D44;
     text-decoration: none;
     font-weight: 500;
     margin-left: 2.5rem;
 }
-
+.myNavbar a::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    left: 0;
+    background-color: #BC243C;
+    transition: width 0.3s ease-in-out;
+}
+.myNavbar a:hover {
+    color: #BC243C;
+}
+.myNavbar a:hover::after {
+    width: 100%;
+}
+#check {
+    display: none;
+}
 .icons {
     position: absolute;
     right: 5%;
@@ -65,23 +108,60 @@
 @media (max-width: 768px) {
     .icons {
         display: inline-flex;
+        color: #D2691E;
+    }
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+    .icons #close-icon {
+        display: none;
     }
 
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
     .myNavbar {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        height: 14rem;
+        height: 0;
         background: rgba(0, 0, 0, .1);
         backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s  ease;
     }
-
+    #check:checked~.myNavbar {
+        height: 14rem;
+    }
     .myNavbar a {
         display: block;
         font-size: 1.1rem;
         margin: 1.5rem 0;
         text-align: center;
-        flex-direction: column;
+        transform: translateY(-50px);
+        transition: .3s ease;
+        opacity: 0;
+        /* flex-direction: column; */
     }
+    #check:checked~.myNavbar a {
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+}
+
+/* CAROUSEL */
+.myCarousel .myCarousel-Content .myCarousel-item {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    display: block;
+    align-items: center;
+}
+.myCarousel .myCarousel-Content .myCarousel-background img {
+    background-repeat: none ;
+    position: relative;
+    top: 100px;
 }

@@ -9,8 +9,10 @@
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;wght@300;500;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Roboto:wght@100;300;500;900&display=swap"
         rel="stylesheet">
+
     <!-- Font Baxicon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Bootstrap CSS -->
@@ -23,17 +25,30 @@
 <body>
     <header class="myHeader">
         <a href="#" class="logo">HUY PHAM</a>
-        <label for="" class="icons">
-            <i class='bx bx-menu'></i>
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
         </label>
         <nav class="myNavbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Production</a>
-            <a href="#">Contact</a>
+            <a href="#" style="--i:0;">Home</a>
+            <a href="#" style="--i:1;">About</a>
+            <a href="#" style="--i:2;">Production</a>
+            <a href="#" style="--i:3;">Contact</a>
         </nav>
     </header>
-    <section class="myCarousel"></section>
+    <section class="myCarousel container">
+        <div class="myCarousel-Content d-flex justify-content-between">
+            <div class="myCarousel-item">
+                <h3>HEY THERE !</h3>
+                <h1>I AM HUY PHAM</h1>
+                <h5>WEB DEVELOPER, BIM DEVELOPER</h5>
+            </div>
+            <div class="myCarousel-background">
+                <img src="./assets/image/myCarousel1.png" alt="">
+            </div>
+        </div>
+    </section>
     <section class="myCarousel"></section>
     <section class="aboutMe"></section>
     <section class="myTech"></section>
