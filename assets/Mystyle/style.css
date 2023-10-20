@@ -2,13 +2,15 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
-
+a {
+    text-decoration: none;
+}
 
 .myHeader {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; 
     padding: 1.3rem 10%;
     display: flex;
     justify-content: space-between;
@@ -159,9 +161,95 @@
     width: 100%;
     display: block;
     align-items: center;
+    padding: 120px 30px;
 }
 .myCarousel .myCarousel-Content .myCarousel-background img {
     background-repeat: none ;
     position: relative;
     top: 100px;
+}
+.myCarousel .myCarousel-Content h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #797979;
+    letter-spacing: 2px;
+}
+.myCarousel .myCarousel-Content h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #05364d;
+    line-height: 3rem;
+}
+.myCarousel .myCarousel-Content h1 span {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #E15D44;
+    line-height: 3rem;
+}
+.myCarousel .myCarousel-Content h5 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #05364d;
+    letter-spacing: 1px;
+}
+
+.myCarousel .myCarousel-Content .social-icons i {
+    font-size: 3rem;
+    transition: .3s ease;
+    color: #D2691E;
+}
+.myCarousel .myCarousel-Content .social-icons i:hover {
+    color: #333;
+}
+.myCarousel .myCarousel-Content .myCarousel-item a {
+    text-decoration: none;
+}
+.primary_btn {
+    display: inline-block;
+    background: linear-gradient(to right, #D2691E 0%, #f6ed78 51%, #fff 100%);
+    color: #fff;
+    letter-spacing: 0px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 38px;
+    outline: none !important;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-size: 200% auto;
+}
+.primary_btn:hover {
+    background-position: right center;
+    color: #BC243C;
+}
+/* ABOUT ME */
+.aboutMe {
+    margin-top: 180px;
+}
+.aboutMe .main-title .top-text {
+    color: #797979;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.aboutMe .main-title p:first-child::after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 100px;
+    width: 200px;
+    height: 2px;
+    background-color: #D2691E;
+}
+.aboutMe .main-title h2 {
+    font-size: 30px;
+    line-height: 52px;
+    color: #05364d;
+}
+.aboutMe .main-title p:last-child {
+    font-size: 1rem;
+    font-weight: 300;
 }
