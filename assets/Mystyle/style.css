@@ -2,8 +2,9 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
-a {
+a ,ul {
     text-decoration: none;
+    list-style-type: none;
 }
 
 .myHeader {
@@ -227,13 +228,25 @@ a {
 }
 /* ABOUT ME */
 .aboutMe {
-    margin-top: 150px;
+    margin-top: 250px;
 }
 .main-title .top-text {
     color: #797979;
     font-size: 1rem;
     font-weight: 300;
     text-transform: uppercase;
+}
+.main-title .top-text-tile {
+    color: #D2691E;
+}
+.main-title .bottom-text {
+    color: #797979;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 40px;
+}
+.main-title .bottom-text {
+    padding: 0 100px;
 }
 .main-title p:first-child::after{
     content: "";
@@ -249,8 +262,109 @@ a {
     line-height: 52px;
     color: #05364d;
 }
+
 .main-title ul li {
     font-size: 1rem;
     font-weight: 300;
     line-height: 40px;
 }
+.main-title ul li i {
+    font-size: 2rem;
+    color: #D2691E;
+}
+/* FRONT END PROJECT */
+.techIconHtml5, .techIconCSS3, .techIconJavascript {
+    width: 120px;
+    height: 24px;
+    line-height: 24px;
+    align-items: center;
+    color: #fff;
+    display: flex;
+    padding: 0 10px;
+    border-radius: 2px;
+}
+.techIconHtml5 {
+    background-color: #D2691E;
+}
+.techIconCSS3 {
+    background-color: rgb(64, 0, 128);
+}
+.techIconJavascript {
+    background-color: #f6e93d;
+}
+.myTech-technologies ul li {
+    text-align: center;
+    font-weight: 500;
+}
+.myTech-technologies ul li i {
+    font-size: 20px;
+}
+.warpper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0px 2px;
+    background: #E15D44;
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;
+  }
+  
+  .panels {
+    background: #fff;
+    box-shadow: 0 2rem 2rem #a3a3a380;
+    min-height: 500px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .panel {
+    display: none;
+    animation: fadein 0.8s;
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .panel-title {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #05364d;
+  }
+  .panel-content .panel-text p {
+    font-size: 1rem;
+    color: #797979;
+    font-weight: 300;
+  }
+  .radio {
+    display: none;
+  }
+  
+  #one:checked ~ .panels #one-panel,
+  #two:checked ~ .panels #two-panel,
+  #three:checked ~ .panels #three-panel {
+    display: block;
+  }
+  
+  #one:checked ~ .tabs #one-tab,
+  #two:checked ~ .tabs #two-tab,
+  #three:checked ~ .tabs #three-tab {
+    background: #fff;
+    color: #000;
+    border-top: 3px solid #D2691E;
+  }
