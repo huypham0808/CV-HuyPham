@@ -227,29 +227,30 @@ a {
 }
 /* ABOUT ME */
 .aboutMe {
-    margin-top: 180px;
+    margin-top: 150px;
 }
-.aboutMe .main-title .top-text {
+.main-title .top-text {
     color: #797979;
     font-size: 1rem;
     font-weight: 300;
     text-transform: uppercase;
 }
-.aboutMe .main-title p:first-child::after{
+.main-title p:first-child::after{
     content: "";
     position: absolute;
     top: 15px;
-    left: 100px;
+    left: 120px;
     width: 200px;
     height: 2px;
     background-color: #D2691E;
 }
-.aboutMe .main-title h2 {
+.main-title h2 {
     font-size: 30px;
     line-height: 52px;
     color: #05364d;
 }
-.aboutMe .main-title p:last-child {
+.main-title ul li {
     font-size: 1rem;
     font-weight: 300;
+    line-height: 40px;
 }
