@@ -18,6 +18,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Owl Carousel -->
+    <link rel="stylesheet" href="./assets/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owl-carousel/owl.theme.default.min.css">
     <!-- My Style -->
     <link rel="stylesheet" href="./assets/Mystyle/style.css">
 </head>
@@ -34,8 +37,10 @@
         <nav class="myNavbar">
             <a href="#" style="--i:0;">Home</a>
             <a href="#" style="--i:1;">About</a>
-            <a href="#" style="--i:2;">Production</a>
-            <a href="#" style="--i:3;">Contact</a>
+            <a href="#" style="--i:2;">Front End</a>
+            <a href="#" style="--i:3;">BIM CAD</a>
+            <a href="#" style="--i:4;">Certificate</a>
+            <a href="#" style="--i:5;">Contact</a>
         </nav>
     </header>
     <section class="myCarousel container">
@@ -86,7 +91,7 @@
             </div>
         </div>
     </section>
-    <section class="myTech mt-5">
+    <section class="myTech">
         <div class="container">
             <div class="main-title text-center">
                 <p class="top-text-tile">FRONT END</p>
@@ -101,7 +106,8 @@
                 <ul class="d-flex justify-content-center">
                     <li class="techIconHtml5"><i class='bx bxl-html5 mr-2'></i>HTML5</li>
                     <li class="techIconCSS3 mx-3"><i class='bx bxl-css3 mr-2'></i>CSS3</li>
-                    <li class="techIconJavascript"><i class='bx bxl-javascript mr-2'></i>Javascript</li>
+                    <li class="techIconJavascript mx-3"><i class='bx bxl-javascript mr-2'></i>Javascript</li>
+                    <li class="techIconReact"><i class='bx bxl-react mr-2'></i>ReactJS</li>
                 </ul>
             </div>
             <div class="warpper">
@@ -164,9 +170,11 @@
                                             href="https://github.com/Huydev0808/E-Commerce_Web_CapstoneProject">CapStone-Project_PRODUCT_MANAGEMENT</a></span>
                                 </p>
                                 <p><strong>Duration:</strong> May/2023 (1 month)</p>
-                                <p class="w-75"><strong>Description:</strong> This web page is designed and developed for practicing OOP and using simple API interactive between Client and Server
+                                <p class="w-75"><strong>Description:</strong> This web page is designed and developed
+                                    for practicing OOP and using simple API interactive between Client and Server
                                 </p>
-                                <p><strong>Technologies: </strong>HTML5, CSS3, Bootstrap 4, JavaScript, AXIOS, MockAPI.</p>
+                                <p><strong>Technologies: </strong>HTML5, CSS3, Bootstrap 4, JavaScript, AXIOS, MockAPI.
+                                </p>
                                 <p><strong>Team size: </strong>2 developers</p>
                             </div>
                         </div>
@@ -179,9 +187,11 @@
                                             href="https://github.com/huypham0808/E_learning_Project.git">CapStone-Project_E-LEARNING</a></span>
                                 </p>
                                 <p><strong>Duration:</strong> Apr/2023 (1.5 months)</p>
-                                <p class="w-75"><strong>Description:</strong> The E-learning platform with multiple online courses about programing field and a page for admin to CRUD user and courses.
+                                <p class="w-75"><strong>Description:</strong> The E-learning platform with multiple
+                                    online courses about programing field and a page for admin to CRUD user and courses.
                                 </p>
-                                <p><strong>Technologies: </strong>ReactJS, Redux, Javascript, HTML5, CSS3, Ant Design, Bootstrap, Axios</p>
+                                <p><strong>Technologies: </strong>ReactJS, Redux, Javascript, HTML5, CSS3, Ant Design,
+                                    Bootstrap, Axios</p>
                                 <p><strong>Team size: </strong>2 developers</p>
                             </div>
                             <div class="panel-preview w-50">
@@ -202,15 +212,156 @@
             </div>
         </div>
     </section>
-    <section class="myProduction"></section>
-    <section class="clientComment"></section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <footer class="myFooter"></footer>
+    <section class="myTech bg-BIMCAD py-5">
+        <div class="container BIMCAD-content">
+            <div class="main-title text-center">
+                <p class="top-text-tile">BIM AUTOMATION</p>
+                <h2 class="text-white">MY PROJECT</h2>
+                <p class="bottom-text text-light">I am a Civil Engineer with a passion for creating innovative solutions
+                    to resolve
+                    complex problems. I have over 5 years of experience in using Autodesk Software (AutoCAD, Revit).
+                    Experience in using C# in AutoCAD API. I have been learning hard about developing web apps to build
+                    application related to the BIM/CAD industry and Engineering service. I hope I can contribute my
+                    knowledge and skills for the development of service and company.
+                </p>
+            </div>
+            <div class="myTech-technologies-BIMCAD mb-5">
+                <ul class="d-flex justify-content-center">
+                    <li class="bg-success py-2 px-3 rounded"><span class="mr-2 bg-light text-success p-1">C# </span> C
+                        sharp</li>
+                    <li class="mx-3 bg-warning py-2 px-3 rounded">WPF UI</li>
+                    <li class="mx-3 bg-danger py-2 px-3 rounded">AutoCAD.NET</li>
+                    <li class="bg-primary py-2 px-3 rounded">Revit API</li>
+                </ul>
+            </div>
+            <div class="BimCAD-project owl-carousel owl-theme text-center">
+                <div class="card item p-3 mx-3 bg-secondary">
+                    <img src="./assets/image/BIMCAD1.png" class="card-img-top img-fluid" alt="..."
+                        style="height: 286px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Auto Generate Beam</h5>
+                    </div>
+                </div>
+                <div class="card item p-3 mx-3 bg-secondary">
+                    <img src="./assets/image/BIMCAD3.JPG" style="height: 286px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Quick draw</h5>
+                    </div>
+                </div>
+                <div class="card item p-3 mx-3 bg-secondary">
+                    <img src="./assets/image/BIMCAD2.JPG" style="height: 286px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Auto Rename, Create folder, Unit converter</h5>
+                    </div>
+                </div>
+                <div class="card item p-3 mx-3 bg-secondary">
+                    <video width="430" height="290" controls>
+                        <source
+                            src="https://dms.licdn.com/playlist/vid/C5605AQGIv5-w8LWEPA/mp4-640p-30fp-crf28/0/1631504591277?e=2147483647&v=beta&t=ZGBymYj2QJzNn22x9bxdfamvgkP8OFXki7lPYbj5s-M"
+                            type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Auto generate Area & Quick call library</h5>
+                    </div>
+                </div>
+                <div class="card item p-3 mx-3 bg-secondary">
+                    <video width="430" height="290" controls>
+                        <source
+                            src="https://dms.licdn.com/playlist/vid/C5605AQE-UgSViFp1iw/mp4-640p-30fp-crf28/0/1630829583134?e=2147483647&v=beta&t=Jg_Ae4mmRAYyd_9tTz_wuG5p4twQsQgh3FvTOKDo7LM"
+                            type="video/mp4">
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Auto generate level in Revit</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+    <section class="myCertificate">
+        <div class="container">
+            <div class="main-title text-center my-5">
+                <p class="top-text-tile">BACKGROUND ACADEMY</p>
+                <h2>MY CERTIFICATE</h2>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3">
+                    <div class="pdf-container">
+                        <iframe src="https://drive.google.com/file/d/1rh9on2fimHBqv-KtFuuGbBGKoaJY6bBy/preview"
+                            width="300" height="400" allow="autoplay"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="pdf-container">
+                        <iframe src="https://drive.google.com/file/d/1gS_bYMa4XyesxHlx9yduTCToCTsZ_ugA/preview"
+                            width="300" height="400" allow="autoplay"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="pdf-container">
+                        <iframe src="https://drive.google.com/file/d/1Z6IMtkOKE3ihFCpUcfj5tCcytcCWfWoq/preview"
+                            width="300" height="200" allow="autoplay"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="pdf-container">
+                        <iframe src="https://drive.google.com/file/d/1nZHInPvFPL5GmAyAR2JpuA4MksT4fPTm/preview"
+                            width="300" height="400" allow="autoplay"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="pdf-container">
+                        <iframe src="https://drive.google.com/file/d/1wIY2Ji1scX_iFf3ogw6x0cgGrwo4LK87/preview"
+                            width="300" height="400" allow="autoplay"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="pdf-container">
+                        <iframe src="https://drive.google.com/file/d/1B-zNH_xTF5o4P61Cl9z4zOkwSOADAIyF/preview"
+                            width="300" height="400" allow="autoplay"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="pdf-container">
+                        <iframe src="https://drive.google.com/file/d/1DteH2RAd8j1mO_Plh6OImXGSQT4yM6rk/preview"
+                            width="300" height="400" allow="autoplay"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="pdf-container">
+                        <iframe src="https://drive.google.com/file/d/1SeSXrI9mXr7Y68rcmvdtbdgMd8rE-Kfl/preview"
+                            width="300" height="400" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="myFooter bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="#" class="logo">HUY PHAM</a>
+                </div>
+                <div class="col-lg-4">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Front End</li>
+                        <li>BIM CAD</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <p>Email</p>
+                    <p>LinkedIn</p>
+                    <p>Youtube</p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <p class="text-center text-white"
+            style="font-weight: 300;">© 2023 CV-Huy Pham. All rights reserved | Designed by Huy Pham</p>
+        </div>
+    </footer>
 
 
     <!-- Optional JavaScript -->
@@ -224,6 +375,46 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- Carousel animation -->
+    <script src="./assets/owl-carousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel(
+                {
+                    stagePadding: 50,
+                    loop: true,
+                    margin: 0,
+                    nav: false,
+                    responsiveClass: true,
+                    autoplaySpeed: 1000,
+                    autoplayHoverPause: false,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: false
+                        },
+                        480: {
+                            items: 1,
+                            nav: false
+                        },
+                        667: {
+                            items: 1,
+                            nav: false
+                        },
+                        1000: {
+                            items: 2,
+                            nav: false
+                        }
+                    }
+                }
+            );
+        });
+
+    </script>
+</body>
+
+</html>
+
 </body>
 
 </html>

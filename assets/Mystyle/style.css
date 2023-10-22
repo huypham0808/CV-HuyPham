@@ -2,7 +2,9 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
-a ,ul {
+
+a,
+ul {
     text-decoration: none;
     list-style-type: none;
 }
@@ -11,7 +13,7 @@ a ,ul {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     padding: 1.3rem 10%;
     display: flex;
     justify-content: space-between;
@@ -39,21 +41,26 @@ a ,ul {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255, .4), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
     transition: .5s;
 }
+
 .myHeader:hover::after {
     left: 100%;
 }
-.myHeader a {
+
+.myHeader a,
+.myFooter a {
     color: #D2691E;
     text-decoration: none;
     font-family: 'Merienda', cursive;
     transition: all 0.3s;
 }
+
 .myHeader a:hover {
     color: #BC243C;
 }
+
 .logo {
     font-size: 2rem;
     color: #fff;
@@ -69,6 +76,7 @@ a ,ul {
     font-weight: 500;
     margin-left: 2.5rem;
 }
+
 .myNavbar a::after {
     content: "";
     display: inline-block;
@@ -80,15 +88,20 @@ a ,ul {
     background-color: #BC243C;
     transition: width 0.3s ease-in-out;
 }
-.myNavbar a:hover {
+
+.myNavbar a:hover,
+.myFooter a:hover {
     color: #BC243C;
 }
+
 .myNavbar a:hover::after {
     width: 100%;
 }
+
 #check {
     display: none;
 }
+
 .icons {
     position: absolute;
     right: 5%;
@@ -113,9 +126,11 @@ a ,ul {
         display: inline-flex;
         color: #D2691E;
     }
+
     #check:checked~.icons #menu-icon {
         display: none;
     }
+
     .icons #close-icon {
         display: none;
     }
@@ -123,6 +138,7 @@ a ,ul {
     #check:checked~.icons #close-icon {
         display: block;
     }
+
     .myNavbar {
         position: absolute;
         top: 100%;
@@ -133,11 +149,13 @@ a ,ul {
         backdrop-filter: blur(50px);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
         overflow: hidden;
-        transition: .3s  ease;
+        transition: .3s ease;
     }
+
     #check:checked~.myNavbar {
-        height: 14rem;
+        height: 20rem;
     }
+
     .myNavbar a {
         display: block;
         font-size: 1.1rem;
@@ -146,8 +164,8 @@ a ,ul {
         transform: translateY(-50px);
         transition: .3s ease;
         opacity: 0;
-        /* flex-direction: column; */
     }
+
     #check:checked~.myNavbar a {
         transform: translateY(0);
         transition-delay: calc(.15s * var(--i));
@@ -164,29 +182,34 @@ a ,ul {
     align-items: center;
     padding: 120px 30px;
 }
+
 .myCarousel .myCarousel-Content .myCarousel-background img {
-    background-repeat: none ;
+    background-repeat: none;
     position: relative;
     top: 100px;
 }
+
 .myCarousel .myCarousel-Content h4 {
     font-size: 1rem;
     font-weight: 300;
     color: #797979;
     letter-spacing: 2px;
 }
+
 .myCarousel .myCarousel-Content h1 {
     font-size: 3rem;
     font-weight: 500;
     color: #05364d;
     line-height: 3rem;
 }
+
 .myCarousel .myCarousel-Content h1 span {
     font-size: 3rem;
     font-weight: 500;
     color: #E15D44;
     line-height: 3rem;
 }
+
 .myCarousel .myCarousel-Content h5 {
     font-size: 1.3rem;
     font-weight: 300;
@@ -199,18 +222,21 @@ a ,ul {
     transition: .3s ease;
     color: #D2691E;
 }
+
 .myCarousel .myCarousel-Content .social-icons i:hover {
     color: #333;
 }
+
 .myCarousel .myCarousel-Content .myCarousel-item a {
     text-decoration: none;
 }
+
 .primary_btn {
     display: inline-block;
     background: linear-gradient(to right, #D2691E 0%, #f6ed78 51%, #fff 100%);
     color: #fff;
     letter-spacing: 0px;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 50px;
@@ -222,41 +248,51 @@ a ,ul {
     border-radius: 5px;
     background-size: 200% auto;
 }
+
 .primary_btn:hover {
     background-position: right center;
     color: #BC243C;
 }
+
 /* ABOUT ME */
 .aboutMe {
     margin-top: 250px;
 }
+
 .main-title .top-text {
     color: #797979;
     font-size: 1rem;
     font-weight: 300;
     text-transform: uppercase;
 }
+
 .main-title .top-text-tile {
     color: #D2691E;
 }
+
 .main-title .bottom-text {
     color: #797979;
     font-size: 1rem;
     font-weight: 300;
     line-height: 40px;
 }
+
 .main-title .bottom-text {
     padding: 0 100px;
 }
-.main-title p:first-child::after{
+.main-title .top-text {
+    position: relative;
+}
+.main-title .top-text::after {
     content: "";
     position: absolute;
     top: 15px;
-    left: 120px;
+    left: 90px;
     width: 200px;
     height: 2px;
     background-color: #D2691E;
 }
+
 .main-title h2 {
     font-size: 30px;
     line-height: 52px;
@@ -268,44 +304,69 @@ a ,ul {
     font-weight: 300;
     line-height: 40px;
 }
+
 .main-title ul li i {
     font-size: 2rem;
     color: #D2691E;
 }
+
 /* FRONT END PROJECT */
-.techIconHtml5, .techIconCSS3, .techIconJavascript {
-    width: 120px;
+.myTech {
+    margin: 150px 0;
+}
+
+.techIconHtml5,
+.techIconCSS3,
+.techIconJavascript,
+.techIconReact {
+    width: 150px;
     height: 24px;
     line-height: 24px;
     align-items: center;
     color: #fff;
     display: flex;
-    padding: 0 10px;
+
     border-radius: 2px;
 }
+
 .techIconHtml5 {
     background-color: #D2691E;
 }
+
 .techIconCSS3 {
     background-color: rgb(64, 0, 128);
 }
+
 .techIconJavascript {
-    background-color: #f6e93d;
+    background-color: #f7e601;
 }
+
+.techIconReact {
+    background-color: #333;
+
+}
+
+.techIconReact i {
+    color: #00d8ff;
+}
+
 .myTech-technologies ul li {
     text-align: center;
     font-weight: 500;
+    padding: 20px;
 }
+
 .myTech-technologies ul li i {
-    font-size: 20px;
+    font-size: 25px;
 }
+
 .warpper {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .tab {
+}
+
+.tab {
     cursor: pointer;
     padding: 10px 20px;
     margin: 0px 2px;
@@ -314,9 +375,9 @@ a ,ul {
     color: #fff;
     border-radius: 3px 3px 0px 0px;
     box-shadow: 0 0.5rem 0.8rem #00000080;
-  }
-  
-  .panels {
+}
+
+.panels {
     background: #fff;
     box-shadow: 0 2rem 2rem #a3a3a380;
     min-height: 500px;
@@ -325,46 +386,83 @@ a ,ul {
     border-radius: 5px;
     overflow: hidden;
     padding: 20px;
-  }
-  
-  .panel {
+}
+
+.panel {
     display: none;
     animation: fadein 0.8s;
-  }
-  
-  @keyframes fadein {
+}
+
+@keyframes fadein {
     from {
-      opacity: 0;
+        opacity: 0;
     }
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  .panel-title {
+}
+
+.panel-title {
     font-size: 1.2em;
     font-weight: 500;
     color: #05364d;
-  }
-  .panel-content .panel-text p {
+}
+
+.panel-content .panel-text p {
     font-size: 1rem;
     color: #797979;
     font-weight: 300;
-  }
-  .radio {
+}
+
+.radio {
     display: none;
-  }
-  
-  #one:checked ~ .panels #one-panel,
-  #two:checked ~ .panels #two-panel,
-  #three:checked ~ .panels #three-panel {
+}
+
+#one:checked~.panels #one-panel,
+#two:checked~.panels #two-panel,
+#three:checked~.panels #three-panel {
     display: block;
-  }
-  
-  #one:checked ~ .tabs #one-tab,
-  #two:checked ~ .tabs #two-tab,
-  #three:checked ~ .tabs #three-tab {
+}
+
+#one:checked~.tabs #one-tab,
+#two:checked~.tabs #two-tab,
+#three:checked~.tabs #three-tab {
     background: #fff;
     color: #000;
     border-top: 3px solid #D2691E;
-  }
+}
+
+/* BIMCAD project */
+.BIMCAD-content {
+    position: relative;
+    z-index: 2;
+}
+.BimCAD-project {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-BIMCAD {
+    position: relative;
+    background-image: url('https://th.bing.com/th/id/R.d7c8d157050de8ac352fe1226405c84a?rik=6WlPQ85n77X7mQ&riu=http%3a%2f%2fwww.thecadroom.com%2fwp-content%2fuploads%2f2015%2f09%2f3d-CAD-Drawing-9.png&ehk=OH8W4yGcHpug%2bY%2fUO8q6XMaEFMqy6P5BkPQ4n%2fylQKk%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.bg-BIMCAD .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.593);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* FOOTER */
+.myFooter {
+    padding: 50px 0 3px 0;
+    margin-top: 50px;
+}
