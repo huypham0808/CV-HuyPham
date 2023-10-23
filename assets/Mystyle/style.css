@@ -466,3 +466,6 @@ ul {
     padding: 50px 0 3px 0;
     margin-top: 50px;
 }
+.myFooter i {
+    font-size: 24px;
+}

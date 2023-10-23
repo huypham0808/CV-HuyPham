@@ -6,6 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./assets/image/software-engineer.png" type="image/x-icon">
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,11 +37,11 @@
         </label>
         <nav class="myNavbar">
             <a href="#" style="--i:0;">Home</a>
-            <a href="#" style="--i:1;">About</a>
-            <a href="#" style="--i:2;">Front End</a>
-            <a href="#" style="--i:3;">BIM CAD</a>
-            <a href="#" style="--i:4;">Certificate</a>
-            <a href="#" style="--i:5;">Contact</a>
+            <a href="#aboutMe" style="--i:1;">About</a>
+            <a href="#frontEnd-tech" style="--i:2;">Front End</a>
+            <a href="#BIMCAD" style="--i:3;">BIM CAD</a>
+            <a href="#certificate" style="--i:4;">Certificate</a>
+            <a href="#contact" style="--i:5;">Contact</a>
         </nav>
     </header>
     <section class="myCarousel container">
@@ -54,8 +55,10 @@
                     <i class='bx bxl-linkedin mx-3 my-3'></i>
                     <i class='bx bxl-youtube'></i>
                 </div>
-                <a href="#" class="primary_btn">
-                    <span>See my work</span>
+                <a href="https://drive.google.com/file/d/1AQ8nFOgtjhf2I9WZZvW5m8RYFMoqQm2W/view" 
+                class="primary_btn"
+                target="_blank">
+                    <span>Dowload my CV</span>
                 </a>
             </div>
             <div class="myCarousel-background">
@@ -63,7 +66,7 @@
             </div>
         </div>
     </section>
-    <section class="aboutMe mb-5">
+    <section id="aboutMe" class="aboutMe mb-5">
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-5">
@@ -93,7 +96,7 @@
     </section>
     <section class="myTech">
         <div class="container">
-            <div class="main-title text-center">
+            <div id="frontEnd-tech" class="main-title text-center">
                 <p class="top-text-tile">FRONT END</p>
                 <h2>CAPSTONE PROJECT</h2>
                 <p class="bottom-text">I have been working hard to become a proficient developer.
@@ -212,10 +215,10 @@
             </div>
         </div>
     </section>
-    <section class="myTech bg-BIMCAD py-5">
+    <section id="BIMCAD" class="myTech bg-BIMCAD py-5">
         <div class="container BIMCAD-content">
             <div class="main-title text-center">
-                <p class="top-text-tile">BIM AUTOMATION</p>
+                <p class="top-text-tile">BIM CAD AUTOMATION</p>
                 <h2 class="text-white">MY PROJECT</h2>
                 <p class="bottom-text text-light">I am a Civil Engineer with a passion for creating innovative solutions
                     to resolve
@@ -278,7 +281,7 @@
         </div>
         <div class="overlay"></div>
     </section>
-    <section class="myCertificate">
+    <section id="certificate" class="myCertificate">
         <div class="container">
             <div class="main-title text-center my-5">
                 <p class="top-text-tile">BACKGROUND ACADEMY</p>
@@ -336,7 +339,7 @@
             </div>
         </div>
     </section>
-    <footer class="myFooter bg-dark">
+    <footer id="contact" class="myFooter bg-dark">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -344,17 +347,19 @@
                 </div>
                 <div class="col-lg-4">
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Front End</li>
-                        <li>BIM CAD</li>
-                        <li>Contact</li>
+                        <li class="my-2"><a href="#">Home</a></li>
+                        <li class="my-2"><a href="#aboutMe">About</a></li>
+                        <li class="my-2"><a href="#frontEnd-tech">Front End</a></li>
+                        <li class="my-2"><a href="#BIMCAD">BIM CAD</a></li>
+                        <li class="my-2"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                    <p>Email</p>
-                    <p>LinkedIn</p>
-                    <p>Youtube</p>
+                    <ul>
+                        <li class="my-2 text-white" style="font-weight: 300; font-size: 16px;"><i class='bx bx-envelope mr-2'></i><a type="email" href="mailto:phamngohoanghuy95@gmail.com">phamngohoanghuy95@gmail.com</a></li>
+                        <li class="my-2 text-white" style="font-weight: 300;"><i class='bx bxl-linkedin-square mr-2'></i><a href="https://www.linkedin.com/in/hoang-huy-pham-ngo-3b5800134/" target="_blank">Visit my profile in LinkedIn</a></li>
+                        <li class="my-2 text-white" style="font-weight: 300;"><i class='bx bxl-github mr-2' ></i><a href="https://github.com/huypham0808" target="_blank">Visit my profile in Github</a></li>
+                    </ul>
                 </div>
             </div>
             <hr class="bg-white">
@@ -375,6 +380,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
     <!-- Carousel animation -->
     <script src="./assets/owl-carousel/owl.carousel.min.js"></script>
     <script>
